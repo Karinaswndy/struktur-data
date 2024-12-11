@@ -1,29 +1,54 @@
+
 #include <iostream>
 #include <conio.h>
 using namespace std;
 
+int n;
+
+
+void tukar(int *a, int *b) {
+  int t = *a;
+  *a = *b;
+  *b = t;
+}
+
 
 void dMenu(){
 system("cls");
-cout<<"Aplikasi Tampilan Menu"<<"\n";       
-cout<<"1. Menu Pertama"<<"\n";            
-cout<<"2. Menu Kedua"<<"\n";            
-cout<<"3. Menu Ketiga"<<"\n";           
-cout<<"4. Menu Keempat"<<"\n";            
+cout<<"Aplikasi Sorting Bubble"<<"\n";       
+cout<<"1. masukan data"<<"\n";            
+cout<<"2. tampilkan data"<<"\n";            
+cout<<"3. sorting asc"<<"\n";           
+cout<<"4. sorting dsc"<<"\n";            
 cout<<"5. Exit"<<"\n";           
 cout<<"Masukan angka :";        
 
 }
 
-void mPertama(string pesan){
+void mPertama(string pesan, int data[]){
 system("cls");
 cout<<"hallo saya menu "<<pesan;
 getch();
 }
 
+void tampildata(int data[]){
+  system("cls");
+}
+
+void sortingasc(int data[]){
+  system("cls");
+}
+
+void sortingdsc(int data[]){
+  system("cls");
+}
+
 
 int main() {
-char pl;
+  int data [100];
+
+  n = 10;
+  char pl;
 do
 {
     dMenu();
@@ -32,18 +57,18 @@ do
   {
    case '1':
     /* code */
-    mPertama("pertama");
+    mPertama("pertama", data);
     break;
    case '2':
-    mPertama("ke- dua");
+    tampildata(data);
     /* code */ 
     break;  
    case '3':
-    mPertama("ke- tiga");
+    sortingasc(data);
     /* code */
     break;  
    case '4':
-    mPertama("ke- empat");
+    sortingdsc(data);
     /* code */
     break;  
   case '5':
