@@ -27,7 +27,14 @@ cout<<"Masukan angka :";
 
 void mPertama(string pesan, int data[]){
 system("cls");
-cout<<"hallo saya menu "<<pesan;
+if (pesan == "pertama") {
+cout<<""Masukkan jumlah data: ";
+cin >> n;
+  for (int i = 0; i < n; i++) {
+    cout << "Masukkan data ke-" << (i + 1) << ": ";
+    cin >> data[i];
+      }
+  }
 getch();
 }
 
