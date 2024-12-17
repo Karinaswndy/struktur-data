@@ -28,7 +28,7 @@ cout<<"Masukan angka :";
 void mPertama(string pesan, int data[]){
 system("cls");
 if (pesan == "pertama") {
-cout<<""Masukkan jumlah data: ";
+cout<< "Masukkan jumlah data: ";
 cin >> n;
   for (int i = 0; i < n; i++) {
     cout << "Masukkan data ke-" << (i + 1) << ": ";
@@ -40,6 +40,14 @@ getch();
 
 void tampildata(int data[]){
   system("cls");
+  if (n > 0) {
+        cout << "Data yang ada:\n";
+        for (int i = 0; i < n; i++) {
+            cout << "Data ke-" << (i + 1) << ": " << data[i] << "\n";
+        }
+    } else {
+        cout << "Data kosong. Masukkan data terlebih dahulu.\n";
+    }
 }
 
 void sortingasc(int data[]){
