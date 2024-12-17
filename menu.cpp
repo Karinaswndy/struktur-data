@@ -48,6 +48,7 @@ void tampildata(int data[]){
     } else {
         cout << "Data kosong. Masukkan data terlebih dahulu.\n";
     }
+    getch();
 }
 
 void sortingasc(int data[]){
